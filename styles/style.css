@@ -180,6 +180,11 @@ h3{
     gap: 15px;
 }
 
+.blockSkill img{
+    width: 150px;
+    height: 150px;
+}
+
 .blockSkill p{
     font-size: 20px;
     cursor: default;
