@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: poppins;
+    text-transform: uppercase;
+    cursor: default;
+}
+:root{
+    --colorPrimaria: #039133;
+}
+body::-webkit-scrollbar {
+    background: transparent;
+}
+body{
+    background: #333;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 90%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+    
+}
+nav a{
+    text-decoration: none;
+    color: #a3a3a3;
+    cursor: pointer;
+}
+nav a:hover{
+    color:#eee;
+}
+
+
+#home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7rem 0rem;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.btnContact{
+    background:var(--colorPrimaria);
+    padding: 1rem 0;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    width: 40%;
+    color: #eee;
+    cursor: pointer;
+}
+h1,span{
+    color: #eee;
+}
+h1{
+    font-size: 50px;
+    font-weight: 200;
+}
+span{
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+.content p{
+    color: var(--colorPrimaria)
+}
+
+h2{
+    color:#eee;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+h3{
+    color: #eee;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.img img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 10px 15px 0px gray;
+}
+
+.left-icon{
+    position: fixed;
+    left: 0;
+    top: -10rem;
+    z-index: -1;
+}
+.right-icon{
+    position:fixed;
+    right: 0;
+    bottom:-20rem;
+    z-index: -1;
+}
+#about{
+    text-align: center;
+    padding: 3rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.block{
+    display: flex;
+    padding: 3rem;
+    background: #a3a3a369;
+    color: #eee;
+    border-radius: 5px;
+    border: 2px solid #eee;
+}
+.block p{
+    font-size: 25px;
+    cursor: default;
+}
+
+#skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 0;
+    gap: 15px;
+}
+
+.contentSkill{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.blockSkill{
+    padding: 2rem;
+    background: #a3a3a369;
+    border-radius: 5px;
+    border: 2px solid #eee;
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.blockSkill p{
+    font-size: 20px;
+    cursor: default;
+}
+
+#project{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.imgProject a img{
+    width: 500px;
+    border-radius: 5px;
+    border: 2px solid #eee;
+    cursor: pointer;
+    
+}
+.imgProject p{
+    color: #eee;
+    font-size: 15px;
+}
+
+#contact{
+    text-align: center;
+    padding: 3rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+
+#email{
+    text-transform: lowercase;
+    color:#eee;
+}
+
+.links{
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+}
+.links div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.links div a{
+    color: #eee;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px){
+
+    .left-icon{
+        width: 300px;
+    }
+    .container{
+        padding: 0 2rem;
+    }
+   
+    #home{
+        text-align: center;
+        flex-direction: column;
+        padding: 0;
+    }
+    .content{
+        align-items: center;
+    }
+
+    .img{
+        padding: 2rem 0;
+    }
+    .img img{
+        width: 250px;
+        height: 250px;
+    }
+
+    #box{
+        flex-direction: column;
+    }
+
+    .imgProject a img{
+        width: 350px;
+    }
+
+    .links div{
+        flex-direction: column;
+    }
+
+}
