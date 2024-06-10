@@ -147,29 +147,35 @@ h3{
 
 #skills{
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     text-align: center;
     padding: 3rem 0;
     gap: 15px;
 }
 
+
 .contentSkill{
     display: flex;
-    gap: 20px;
     flex-wrap: wrap;
-    text-align: center;
+    gap: 20px;
     justify-content: center;
 }
 
+
+.contentSkill :nth-last-child(1){
+    align-self: center;
+}
+
 .blockSkill{
-    padding: 2rem;
+    padding: 15px;
     background: #a3a3a369;
     border-radius: 5px;
     border: 2px solid #eee;
     color: #eee;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-direction: column;
     gap: 15px;
 }
@@ -232,6 +238,13 @@ h3{
 
 @media screen and (max-width: 700px){
 
+    h1{
+        font-size: 30px;
+    }
+    span{
+        font-size: 20px;
+    }
+
     .left-icon{
         width: 300px;
     }
@@ -256,8 +269,16 @@ h3{
         height: 250px;
     }
 
+    .blockSkill img{
+        width: 100px;
+        height: 120px;
+    }
     #box{
         flex-direction: column;
+    }
+
+    .blockSkill{
+        width: 130px;
     }
 
     .imgProject a img{
@@ -267,5 +288,10 @@ h3{
     .links div{
         flex-direction: column;
     }
+
+    .link{
+        font-size:15px;
+    }
+
 
 }
